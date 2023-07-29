@@ -1,0 +1,35 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh !important;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    width: 250px!important;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 1rem;
+}
+.sidebar_brand{
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 50px!important;
+        height: auto;
+    
+    }
+    .main-container {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+}
